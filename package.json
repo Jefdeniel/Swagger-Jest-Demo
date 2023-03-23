@@ -1,0 +1,37 @@
+{
+  "name": "swagger-jest-demo",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon ./src/app.js --config nodemon.json",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage"
+  },
+  "keywords": [],
+  "author": "Arteveldehogeschool",
+  "contributors": [
+    "Tim De Paepe",
+    "Frederick Roegiers"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-validator": "^6.15.0",
+    "handlebars": "^4.7.7",
+    "jsonwebtoken": "^9.0.0",
+    "nodemon": "^2.0.20",
+    "sqlite3": "^5.1.4",
+    "swagger-ui-express": "^4.6.2",
+    "typeorm": "^0.3.12"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
