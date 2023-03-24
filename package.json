@@ -6,7 +6,7 @@
   "main": "app.js",
   "scripts": {
     "start:dev": "nodemon ./src/app.js --config nodemon.json",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage"
+    "test": "cross-env NODE_ENV=test node --experimental-vm-modules ./node_modules/jest/bin/jest.js jest --coverage"
   },
   "keywords": [],
   "author": "Arteveldehogeschool",
@@ -32,6 +32,10 @@
     "typeorm": "^0.3.12"
   },
   "devDependencies": {
-    "jest": "^29.5.0"
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
   }
 }
